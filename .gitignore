@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Duplicate source artwork; optimized project copy is in public/poster/
+/9-upscaled.jpg
+
+# Large media stays local until a separate asset upload is prepared
+/public/images/
+/public/videos/
+/public/poster/
