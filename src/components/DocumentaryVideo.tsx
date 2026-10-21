@@ -23,13 +23,17 @@ export default function DocumentaryVideo({ video, poster }: { video: StoryVideo;
         <button
           type="button"
           aria-expanded={showTranscript}
+          aria-controls={`transcript-${video.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
           onClick={() => setShowTranscript(!showTranscript)}
         >
           {showTranscript ? dict.docVideo.hideTranscript : dict.docVideo.readTranscript}
         </button>
       </figcaption>
       {showTranscript && (
-        <div className="video-transcript">
+        <div
+          id={`transcript-${video.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+          className="video-transcript"
+        >
           <h4>{dict.docVideo.transcriptHeading}</h4>
           <p>{video.transcript}</p>
           <p className="transcript-note">{dict.docVideo.transcriptNote}</p>

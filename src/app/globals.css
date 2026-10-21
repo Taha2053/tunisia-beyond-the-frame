@@ -49,3 +49,12 @@
 [dir="rtl"] .footer-lead h2 { text-align: left; }
 [dir="rtl"] .footer-about { margin: 8rem auto 5rem 0; }
 .explorer-canvas, .then-now, .map { direction: ltr !important; }
+
+/* Accessibility: Enhanced readability and touch ergonomics */
+.media-figure figcaption { font-size: 0.75rem; line-height: 1.4; color: #3f4e52; }
+.olive-story .media-figure figcaption, .feature-film .media-figure figcaption { color: #f0f4f5; }
+.dialog-gallery figcaption { font-size: 0.75rem; color: #3f4e52; }
+.then-now figcaption { font-size: 0.75rem; color: #3f4e52; }
+.hotspots button { min-width: 44px; min-height: 44px; }
+.skip-link { font-size: 0.9rem; font-weight: 600; border-radius: 4px; box-shadow: 0 4px 14px rgba(0,0,0,0.3); }
+[dir="rtl"] .skip-link { left: auto; right: 1rem; }

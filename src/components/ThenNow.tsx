@@ -35,6 +35,10 @@ export default function ThenNow({ thenImage, nowImage }: { thenImage: StoryImage
         </div>
         <input
           aria-label={dict.ancient.compareDesc}
+          aria-valuemin={8}
+          aria-valuemax={92}
+          aria-valuenow={position}
+          aria-valuetext={`${position}%`}
           type="range"
           min="8"
           max="92"

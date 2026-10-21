@@ -8,11 +8,15 @@ import DocumentaryVideo from "./DocumentaryVideo";
 
 export default function StoryDialog({ story, onClose }: { story: Story | null; onClose: () => void }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  const triggerElementRef = useRef<HTMLElement | null>(null);
   const [speaking, setSpeaking] = useState(false);
   const { dict, meta } = useLanguage();
 
   useEffect(() => {
-    if (story && !dialogRef.current?.open) dialogRef.current?.showModal();
+    if (story) {
+      triggerElementRef.current = document.activeElement as HTMLElement;
+      if (!dialogRef.current?.open) dialogRef.current?.showModal();
+    }
   }, [story]);
 
   function close() {
@@ -20,6 +24,7 @@ export default function StoryDialog({ story, onClose }: { story: Story | null; o
     setSpeaking(false);
     dialogRef.current?.close();
     onClose();
+    triggerElementRef.current?.focus();
   }
 
   function toggleNarration() {
@@ -45,6 +50,10 @@ export default function StoryDialog({ story, onClose }: { story: Story | null; o
       ref={dialogRef}
       className="story-dialog"
       dir={meta.dir}
+      aria-labelledby="story-dialog-title"
+      onClick={(event) => {
+        if (event.target === dialogRef.current) close();
+      }}
       onCancel={(event) => {
         event.preventDefault();
         close();
@@ -67,7 +76,7 @@ export default function StoryDialog({ story, onClose }: { story: Story | null; o
                 <p>
                   {story.chapter} · {story.chapterTitle}
                 </p>
-                <h2>{story.title}</h2>
+                <h2 id="story-dialog-title">{story.title}</h2>
                 <p>{story.subtitle}</p>
                 <div className="dialog-meta">
                   <span>{story.readingTime}</span>

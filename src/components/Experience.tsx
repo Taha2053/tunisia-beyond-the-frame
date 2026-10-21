@@ -72,7 +72,7 @@ function ExperienceInner() {
         <nav
           id="site-nav"
           className={menuOpen ? "site-nav open" : "site-nav"}
-          aria-label={dict.nav.about}
+          aria-label={dict.nav.primaryNav}
         >
           <a href="#artwork" onClick={() => setMenuOpen(false)}>
             {dict.nav.artwork}
@@ -135,7 +135,7 @@ function ExperienceInner() {
             <div className="poster-frame">
               <Image
                 src="/poster/tunisia-poster.jpg"
-                alt="Illustrated cultural poster of Tunisia"
+                alt={dict.hero.posterAlt}
                 fill
                 priority
                 sizes="(max-width: 800px) 84vw, 37vw"
@@ -199,7 +199,7 @@ function ExperienceInner() {
             >
               <Image
                 src="/poster/tunisia-poster.jpg"
-                alt=""
+                alt={dict.hero.posterAlt}
                 fill
                 sizes="(max-width: 800px) 92vw, 54vw"
               />
@@ -629,7 +629,7 @@ function ExperienceInner() {
         <section className="closing" aria-labelledby="closing-title">
           <Image
             src="/images/stories/olive-cleaning.webp"
-            alt="A Tunisian woman sorting fresh olives after harvest"
+            alt={dict.closing.imageAlt}
             fill
             sizes="100vw"
           />

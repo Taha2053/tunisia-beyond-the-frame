@@ -42,6 +42,10 @@ function buildLocalizedStories(lang: Language): Story[] {
         ...base.hero,
         alt: loc.heroAlt ?? base.hero.alt,
       },
+      gallery: base.gallery.map((img, idx) => ({
+        ...img,
+        alt: loc.galleryAlt?.[idx] ?? img.alt,
+      })),
       video: base.video
         ? {
             ...base.video,

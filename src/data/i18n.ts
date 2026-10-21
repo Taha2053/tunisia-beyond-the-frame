@@ -44,9 +44,11 @@ export interface SiteDictionary {
     menuOpen: string;
     menuClose: string;
     langSelectLabel: string;
+    primaryNav: string;
   };
   hero: {
     contextBadge: string;
+    posterAlt: string;
     contextDate: string;
     titleMain: string;
     titleEmp: string;
@@ -171,6 +173,7 @@ export interface SiteDictionary {
     quote: string;
     title1: string;
     title2: string;
+    imageAlt: string;
   };
   footer: {
     leadTag: string;
@@ -214,6 +217,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       menuOpen: "Menu",
       menuClose: "Close",
       langSelectLabel: "Select language",
+      primaryNav: "Primary navigation",
     },
     hero: {
       contextBadge: "A cultural exhibition",
@@ -226,6 +230,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       artworkBtn: "Enter the artwork",
       posterCap1: "The cultural poster",
       posterCap2: "AI-assisted artwork · The Architects",
+      posterAlt: "Illustrated cultural poster combining Hannibal, Carthage, Kairouan Great Mosque, El Jem amphitheatre, Sidi Bou Said, traditional dress, couscous, pottery, carpets, and southern architecture",
       scrollPrompt: "Cross the frame",
     },
     threshold: {
@@ -341,10 +346,11 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       quote: "It lives in the hands that shape its crafts, in the stories passed between generations, in the places that remember, and in the people who carry those memories forward.",
       title1: "This is Tunisia.",
       title2: "And its story continues.",
+      imageAlt: "A Tunisian woman sorting fresh olives after harvest",
     },
     footer: {
       leadTag: "Thank you for discovering our home.",
-      leadTitle1: "Created with pride by",
+      leadTitle1: "Created with Love by",
       leadTitle2: "The Architects",
       about1: "This independent cultural experience accompanies a poster created by a student team from ENSIT, Tunisia, for the GCD4F 2026 Global Finals in Beijing.",
       about2: "Photography and film are authentic, locally hosted and individually credited. Historical interpretation links to source institutions inside each story.",
@@ -383,6 +389,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       menuOpen: "القائمة",
       menuClose: "إغلاق",
       langSelectLabel: "اختر اللغة",
+      primaryNav: "التنقل الرئيسي",
     },
     hero: {
       contextBadge: "معرض ثقافي",
@@ -395,6 +402,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       artworkBtn: "تأمل اللوحة",
       posterCap1: "الملصق الثقافي التفاعلي",
       posterCap2: "عمل فني بدعم الذكاء الاصطناعي · The Architects",
+      posterAlt: "ملصق ثقافي فني يجمع بين حنبعل، آثار قرطاج، جامع القيروان الكبير، قصر الجم، سيدي بوسعيد، الأزياء التقليدية، الكسكسي، الفخار، السجاد وعمارة الجنوب",
       scrollPrompt: "اعبر الإطار",
     },
     threshold: {
@@ -510,6 +518,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       quote: "إنه يحيى في الأيادي التي تبدع الصنائع، وفي الحكايات المتناقلة بين الأجيال، وفي الأماكن التي تحفظ الود، وفي القلوب التي تحمل المشعل نحو الغد.",
       title1: "هذه هي تونس.",
       title2: "وحكايتها تتجدد كل يوم.",
+      imageAlt: "امرأة تونسية تنقي حبات الزيتون الطازجة يدوياً بعد الجني",
     },
     footer: {
       leadTag: "شكراً لزيارتكم واكتشافكم لتونس.",
@@ -552,6 +561,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       menuOpen: "Menu",
       menuClose: "Fermer",
       langSelectLabel: "Choisir la langue",
+      primaryNav: "Navigation principale",
     },
     hero: {
       contextBadge: "Une exposition culturelle",
@@ -564,6 +574,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       artworkBtn: "Entrer dans l'œuvre",
       posterCap1: "L'affiche culturelle",
       posterCap2: "Œuvre assistée par IA · The Architects",
+      posterAlt: "Affiche culturelle illustrée associant Hannibal, Carthage, la Grande Mosquée de Kairouan, l'amphithéâtre d'El Jem, Sidi Bou Saïd, le costume traditionnel, le couscous, la poterie et le Sud",
       scrollPrompt: "Franchir le cadre",
     },
     threshold: {
@@ -679,6 +690,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       quote: "Il vit dans les mains qui perpétuent les métiers d'art, dans les histoires confiées d'une génération à l'autre, dans les pierres qui se souviennent et chez ceux qui font rayonner cette mémoire.",
       title1: "Voici la Tunisie.",
       title2: "Et son histoire continue.",
+      imageAlt: "Une femme tunisienne triant manuellement des olives fraîchement récoltées",
     },
     footer: {
       leadTag: "Merci de découvrir notre chez-nous.",
@@ -721,6 +733,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       menuOpen: "菜单",
       menuClose: "关闭",
       langSelectLabel: "选择语言",
+      primaryNav: "主导航",
     },
     hero: {
       contextBadge: "文化主题展览",
@@ -733,6 +746,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       artworkBtn: "步入艺术画作",
       posterCap1: "互动文化海报",
       posterCap2: "AI 辅助艺术创作 · The Architects",
+      posterAlt: "突尼斯文化艺术海报，融合了汉尼拔、迦太基遗址、开罗向大清真寺、埃尔杰姆斗兽场、西迪布赛义德、传统服饰、古斯米、陶艺地毯与南部泥土建筑",
       scrollPrompt: "步入画境",
     },
     threshold: {
@@ -848,6 +862,7 @@ export const dictionaries: Record<Language, SiteDictionary> = {
       quote: "它鲜活地流淌在塑造百工的巧手之中，在代代相传的低语叮咛之中，在静默铭记的历史古迹之中，以及在每一个守护并传递这份记忆的生命之中。",
       title1: "这就是突尼斯。",
       title2: "她的篇章，未完待续。",
+      imageAlt: "一位突尼斯妇女在收获后细心手工分拣新鲜橄榄",
     },
     footer: {
       leadTag: "感谢您驻足聆听我们的家园故事。",
@@ -891,6 +906,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "36.8529° N, 10.3230° E",
       readingTime: "4 min",
       heroAlt: "Archaeological remains at Carthage overlooking trees and the Mediterranean",
+      galleryAlt: [
+        "An 1836 engraved view of the ruins and bay of Carthage",
+        "Roman maritime mosaics displayed at the Bardo National Museum"
+      ],
     },
     kairouan: {
       chapterTitle: "Cities of memory",
@@ -902,6 +921,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "35.6781° N, 10.0963° E",
       readingTime: "3 min",
       heroAlt: "The square minaret and sunlit colonnade of the Great Mosque of Kairouan",
+      galleryAlt: ["A Tunisian carpet artisan weaving at a vertical loom"],
     },
     "el-jem": {
       chapterTitle: "Before the empires",
@@ -935,6 +955,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "36.7992° N, 10.1706° E",
       readingTime: "4 min",
       heroAlt: "A market passage framed by a stone arch in the Medina of Tunis",
+      galleryAlt: [
+        "A narrow residential lane in the Medina of Tunis",
+        "An artisan working inside a Medina workshop"
+      ],
     },
     south: {
       chapterTitle: "The land and its people",
@@ -957,6 +981,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "Across Tunisia",
       readingTime: "5 min",
       heroAlt: "A Tunisian woman weaving a carpet by hand",
+      galleryAlt: ["A Tunisian potter surrounded by finished clay vessels"],
       videoTitle: "The potters of Sejnane",
       videoLanguage: "French with descriptive English captions",
       videoCaptions: "/captions/sejnane-potters-en.vtt",
@@ -972,6 +997,11 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "Regional traditions",
       readingTime: "5 min",
       heroAlt: "Close view of a richly embroidered Tunisian dress with traditional bracelets",
+      galleryAlt: [
+        "People wearing a jebba and sefsari in a Tunisian medina",
+        "A craftsperson embroidering a Mahdia wedding garment with gold thread",
+        "Traditional Tunisian silver and gold jewellery displayed in the Medina"
+      ],
     },
     table: {
       chapterTitle: "At the Tunisian table",
@@ -983,6 +1013,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "A shared national tradition",
       readingTime: "4 min",
       heroAlt: "A Tunisian woman preparing red peppers for harissa",
+      galleryAlt: ["Pots used to prepare Tunisian couscous on a home stove"],
     },
     olives: {
       chapterTitle: "The land and its people",
@@ -994,6 +1025,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "Across Tunisia",
       readingTime: "4 min",
       heroAlt: "A Tunisian woman cleaning freshly harvested olives by hand",
+      galleryAlt: [
+        "Women harvesting olives beneath a mature Tunisian olive tree",
+        "Olive groves descending toward the Mediterranean in Cap Bon"
+      ],
     },
     living: {
       chapterTitle: "A culture still alive",
@@ -1023,6 +1058,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "36.8529° شمالاً، 10.3230° شرقاً",
       readingTime: "4 دقائق",
       heroAlt: "بقايا أثرية في قرطاج تطل على الأشجار ومياه البحر الأبيض المتوسط",
+      galleryAlt: [
+        "نقش تاريخي من عام 1836 يصور أطلال وخليج قرطاج",
+        "فسيفساء بحرية رومانية معروضة في المتحف الوطني بباردو"
+      ],
     },
     kairouan: {
       chapterTitle: "مدن الذاكرة",
@@ -1034,6 +1073,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "35.6781° شمالاً، 10.0963° شرقاً",
       readingTime: "3 دقائق",
       heroAlt: "المئذنة المربعة والأروقة المشمسة لجامع عقبة بن نافع بالقيروان",
+      galleryAlt: ["حرفية تونسية تنسج زربية تقليدية على منسج يدوي عمودي"],
     },
     "el-jem": {
       chapterTitle: "قبل الإمبراطوريات",
@@ -1067,6 +1107,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "36.7992° شمالاً، 10.1706° شرقاً",
       readingTime: "4 دقائق",
       heroAlt: "ممر في السوق مؤطر بقوس حجري عتيق في مدينة تونس العتيقة",
+      galleryAlt: [
+        "زقاق سكني هادئ في مدينة تونس العتيقة",
+        "حرفي يعمل داخل ورشة تقليدية في المدينة العتيقة"
+      ],
     },
     south: {
       chapterTitle: "الأرض وأهلها",
@@ -1089,6 +1133,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "في ربوع تونس",
       readingTime: "5 دقائق",
       heroAlt: "امرأة تونسية تنسج زربية تقليدية على منسج يدوي",
+      galleryAlt: ["خزاف تونسي محاط بأوانٍ فخارية تقليدية تامة الصنع"],
       videoTitle: "خزافات سجنان",
       videoLanguage: "بالفرنسية مع ترجمة وشروحات عربية",
       videoCaptions: "/captions/sejnane-potters-ar.vtt",
@@ -1104,6 +1149,11 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "تقاليد جهوية متنوعة",
       readingTime: "5 دقائق",
       heroAlt: "لقطة مقربة للباس تقليدي تونسي مطرز بالذهب مع أساور أصيلة",
+      galleryAlt: [
+        "تونسيون يرتدون الجبة والسفساري في أزقة المدينة العتيقة",
+        "حرفية تطرز كسوة عرس مهدوية بخيوط الذهب الخالص",
+        "حلي فضية وذهبية تقليدية تونسية معروضة في سوق الصاغة"
+      ],
     },
     table: {
       chapterTitle: "على المائدة التونسية",
@@ -1115,6 +1165,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "تراث غذائي وطني مشترك",
       readingTime: "4 دقائق",
       heroAlt: "امرأة تونسية تجهز قرون الفلفل الأحمر لإعداد الهريسة التقليدية",
+      galleryAlt: ["أوانٍ ومقفول تقليدي يستعمل لطهي الكسكسي التونسي على البخار"],
     },
     olives: {
       chapterTitle: "الأرض وأهلها",
@@ -1126,6 +1177,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "في ربوع تونس",
       readingTime: "4 دقائق",
       heroAlt: "امرأة تونسية تنقي حبات الزيتون الطازجة يدوياً بعد الجني",
+      galleryAlt: [
+        "نسوة يجمعن حبات الزيتون تحت شجرة زيتون معمرة في تونس",
+        "غابات الزيتون المنحدرة نحو مياه البحر الأبيض المتوسط في الوطن القبلي"
+      ],
     },
     living: {
       chapterTitle: "ثقافة تنبض بالحياة",
@@ -1155,6 +1210,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "36.8529° N, 10.3230° E",
       readingTime: "4 min",
       heroAlt: "Vestiges archéologiques de Carthage dominant la mer Méditerranée",
+      galleryAlt: [
+        "Vue gravée de 1836 représentant les ruines et la baie de Carthage",
+        "Mosaïques maritimes romaines exposées au Musée national du Bardo"
+      ],
     },
     kairouan: {
       chapterTitle: "Cités de mémoire",
@@ -1166,6 +1225,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "35.6781° N, 10.0963° E",
       readingTime: "3 min",
       heroAlt: "Minaret carré et colonnade ensoleillée de la Grande Mosquée de Kairouan",
+      galleryAlt: ["Artisane tunisienne tissant un tapis traditionnel sur un métier vertical"],
     },
     "el-jem": {
       chapterTitle: "Avant les empires",
@@ -1199,6 +1259,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "36.7992° N, 10.1706° E",
       readingTime: "4 min",
       heroAlt: "Passage de souk sous une voûte de pierre dans la Médina de Tunis",
+      galleryAlt: [
+        "Ruelle résidentielle paisible dans la Médina de Tunis",
+        "Artisan au travail dans son atelier de la Médina"
+      ],
     },
     south: {
       chapterTitle: "La terre et ses gens",
@@ -1221,6 +1285,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "À travers la Tunisie",
       readingTime: "5 min",
       heroAlt: "Une tisserande tunisienne nouant un tapis traditionnel sur son métier à tisser",
+      galleryAlt: ["Potier tunisien entouré de jarres et poteries en terre cuite"],
       videoTitle: "Les potières de Sejnane",
       videoLanguage: "Français avec descriptions textuelles",
       videoCaptions: "/captions/sejnane-potters-fr.vtt",
@@ -1236,6 +1301,11 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "Traditions régionales",
       readingTime: "5 min",
       heroAlt: "Détail d'une robe tunisienne brodée de fils d'or et parée de bracelets traditionnels",
+      galleryAlt: [
+        "Citadins vêtus de la jebba et du sefsari dans une médina tunisienne",
+        "Artisane brodant un habit de noces de Mahdia au fil d'or",
+        "Bijoux traditionnels tunisiens en argent et en or ciselé"
+      ],
     },
     table: {
       chapterTitle: "À la table tunisienne",
@@ -1247,6 +1317,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "Tradition culinaire partagée",
       readingTime: "4 min",
       heroAlt: "Femme préparant les piments rouges destinés à la confection de la harissa",
+      galleryAlt: ["Couscoussier traditionnel sur le feu pour la cuisson à la vapeur"],
     },
     olives: {
       chapterTitle: "La terre et ses gens",
@@ -1258,6 +1329,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "Territoires oléicoles",
       readingTime: "4 min",
       heroAlt: "Femme tunisienne triant manuellement des olives fraîchement cueillies",
+      galleryAlt: [
+        "Femmes récoltant les olives sous un olivier centenaire en Tunisie",
+        "Oliveraies vallonnées plongeant vers la Méditerranée au Cap Bon"
+      ],
     },
     living: {
       chapterTitle: "Une culture vivante",
@@ -1287,6 +1362,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "北纬 36.8529°，东经 10.3230°",
       readingTime: "4 分钟",
       heroAlt: "迦太基古代遗址石柱远眺地中海与郁郁葱葱的林木",
+      galleryAlt: [
+        "1836 年历史版画描绘的迦太基遗址与海湾风光",
+        "巴尔多国家博物馆展出的古罗马海洋主题马赛克镶嵌画"
+      ],
     },
     kairouan: {
       chapterTitle: "记忆之城",
@@ -1298,6 +1377,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "北纬 35.6781°，东经 10.0963°",
       readingTime: "3 分钟",
       heroAlt: "开罗向大清真寺在日光下肃穆伫立的方形宣礼塔与回廊石柱",
+      galleryAlt: ["突尼斯女匠在立式传统织布机前编织手工地毯"],
     },
     "el-jem": {
       chapterTitle: "帝国曙光之前",
@@ -1331,6 +1411,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "北纬 36.7992°，东经 10.1706°",
       readingTime: "4 分钟",
       heroAlt: "突尼斯老城麦地那石拱门下悠悠穿行的市集小巷",
+      galleryAlt: [
+        "突尼斯麦地那老城内宁静蜿蜒的市井居民巷弄",
+        "在麦地那老城传统手工作坊内专注劳作的手工匠人"
+      ],
     },
     south: {
       chapterTitle: "大地与人民",
@@ -1353,6 +1437,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "走遍突尼斯",
       readingTime: "5 分钟",
       heroAlt: "一位突尼斯妇女在传统木织机前全神贯注手工编织地毯",
+      galleryAlt: ["突尼斯陶工与他精心捏制烧就的传统陶器器皿"],
       videoTitle: "塞日纳讷的女陶匠",
       videoLanguage: "法语原声配合中文文化背景解说",
       videoCaptions: "/captions/sejnane-potters-zh.vtt",
@@ -1368,6 +1453,11 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "多元地域服饰传统",
       readingTime: "5 分钟",
       heroAlt: "突尼斯传统礼服金线密密缝缀的刺绣细节与传统手镯",
+      galleryAlt: [
+        "突尼斯麦地那街头身着传统杰巴长袍与塞夫萨里罩衫的人们",
+        "工艺师以纯金丝线精细刺绣马赫迪耶传统新娘礼服",
+        "在突尼斯麦地那珠宝市集展示的传统金银细工首饰"
+      ],
     },
     table: {
       chapterTitle: "突尼斯餐桌",
@@ -1379,6 +1469,7 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "全民共享的国民美食传统",
       readingTime: "4 分钟",
       heroAlt: "一位突尼斯妇女在阳光下细心收拾晾晒用于制作哈里萨的鲜红辣椒",
+      galleryAlt: ["在火炉上蒸制传统突尼斯古斯米美食的双层陶蒸锅与汤鼎"],
     },
     olives: {
       chapterTitle: "大地与人民",
@@ -1390,6 +1481,10 @@ export const localizedStories: Record<Language, Record<string, LocalizedStoryCon
       coordinates: "突尼斯全境",
       readingTime: "4 分钟",
       heroAlt: "突尼斯老妇人在树下用双手细致分拣刚刚采摘下的新鲜橄榄",
+      galleryAlt: [
+        "妇女们在突尼斯百年苍翠橄榄古树下携手采摘橄榄果",
+        "卡本半岛层叠起伏并延展至地中海蔚蓝海岸的青翠橄榄园"
+      ],
     },
     living: {
       chapterTitle: "生生不息的文化",
