@@ -25,10 +25,5 @@ Thumbs.db
 # TypeScript build cache
 *.tsbuildinfo
 
-# Duplicate source artwork; optimized project copy is in public/poster/
-/9-upscaled.jpg
-
-# Large media stays local until a separate asset upload is prepared
-/public/images/
-/public/videos/
-/public/poster/
+# Local environment files
+.env*.local
